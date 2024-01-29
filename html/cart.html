@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <script src="../js/cartService.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav_bar">
+            <h1 id="logo">
+                <a href="../index.html">THE BIKE SHOP</a>
+            </h1>
+            <div class="items-bar">
+                <a href="#">RallyCross</a>
+                <a href="#">Ruta</a>
+                <a href="#"><img src="../img/shopping_cart.png" alt="carrito_de_compras" id="img_cart"><span id="carrito_compras">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">No hay productos en el carrito <a href="../index.html">Agrega algunos</a></p>
+        <section id="productos-container"></section>
+        <section id="totales">
+            <p>Total unidades: <span id="unidades-totales">0</span></p>
+            <p>Total Precio: <span id="precio-total">0</span>€</p>
+            <button disabled>Comprar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="container"><h3><a href="#">¡¡¡¡Aviso importante!!!!</a></h3></div>
+    </footer>
+</body>
+</html>

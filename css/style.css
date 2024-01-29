@@ -1,0 +1,81 @@
+:root{
+    --color-acento: #6b6b6b;
+    --clor-acento-claro: #ee613033;
+    --color-texto:black;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+a:hover:not(#carrito_compras){
+    color: var(--color-acento);
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+
+    
+}
+.nav_bar div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    
+}
+
+#logo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#img_cart{
+    height: 55px;
+    width: 55px;
+}
+#carrito_compras{
+    background-color: var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h3, p{
+    margin: 5px 0;
+}
+
+.header{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.104);
+    background-color: chocolate;
+    padding: 10px 0;
+}
+footer{
+    text-align: center;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.104);
+    background-color: chocolate;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+button{
+    background-color: chocolate;
+    border-radius: 15px;
+    cursor: pointer;
+}
